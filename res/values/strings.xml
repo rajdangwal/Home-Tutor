@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MajorProject</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="area">
+        <item>Civil Lines</item>
+        <item>Katra</item>
+        <item>Makronia</item>
+        <item>Army Area</item>
+        <item>Gopalganj</item>
+    </string-array>
+    
+    <string-array name="subject_10">
+        <item>Maths</item>
+        <item>Science</item>
+        <item>Social St.</item>
+        <item>Hindi</item>
+        <item>English</item>
+    </string-array>
+    
+    <string-array name="subject_12">
+        <item>Maths</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Comp. Science</item>
+        <item>English</item>
+    </string-array>
+    
+    <string-array name="standard">
+        <item>10</item>
+        <item>12</item>
+    </string-array>
+    
+    <string-array name="timeslot">
+        <item>1</item>
+        <item>2</item>
+        <item>No Preference</item>
+    </string-array>
+    
+    <string-array name="timeslot2">
+        <item>1</item>
+        <item>2</item>
+        <item>All</item>
+    </string-array>
+    
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>No Preference</item>
+    </string-array>
+    
+    <string-array name="qual">
+        <item>B.E.</item>
+        <item>B.Sc.</item>
+        <item>B.Com.</item>
+        <item>M.Tech.</item>
+        <item>M.Sc.</item>
+        <item>M.Com.</item>
+        <item>MBA</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

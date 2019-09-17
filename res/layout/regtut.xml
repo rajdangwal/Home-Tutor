@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back">
+<TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="Tutor Registration"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="30dp"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="@android:color/white"
+              android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etTutNameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="name"
+                android:inputType="textPersonName" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etTutEmailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etTutPhoneReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="phone no."
+                android:inputType="phone" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etTutAddressReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="address"
+                android:textColor="#ffffff"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etTutOccupationReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="occupation"
+                android:inputType="text" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="5"
+                    android:textColor="#ffffff"
+                    android:text="Qualification"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Spinner
+                    android:id="@+id/spQual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etTutQualificationReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="for others specify here"
+                android:textColor="#ffffff"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="Gender"
+                    android:textColor="#ffffff"
+                    android:layout_weight="4"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <RadioGroup
+                    android:id="@+id/rgGenderTut"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <RadioButton
+                        android:id="@+id/rbMaleTut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:checked="true"
+                        android:textColor="#ffffff"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemaleTut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:textColor="#ffffff"
+                        android:text="Female" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etTutPasswordReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="password"
+                android:textColor="#ffffff"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etTutRePasswordReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="retype password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnTutSubmitReg"
+                android:layout_marginLeft="30dp"
+        		android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/customsubmit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

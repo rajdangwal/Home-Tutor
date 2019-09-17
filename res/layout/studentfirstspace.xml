@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back">
+<TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="Get Tutor"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="10dp"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="@android:color/white"
+              android:textStyle="bold"/>
+    <TextView
+        
+        android:id="@+id/tvTempTutorReq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tutor Requirements"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textColor="#ffffff"
+        android:layout_weight="3"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spSubject"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="#ffffff"
+        android:layout_weight="3"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spGender"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Timeslot"
+        android:textColor="#ffffff"
+        android:layout_weight="3"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spTimeslot"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btnTempGetTutors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/customget"
+        android:layout_marginLeft="30dp"
+        		android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/lvTutorList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

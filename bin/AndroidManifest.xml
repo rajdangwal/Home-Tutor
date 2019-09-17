@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.majorproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="TutorMainActivity"></activity>
+        <activity android:name="StudentMainActivity"></activity>
+        <activity android:windowSoftInputMode="stateUnchanged" android:name="RegisterTutorActivity"></activity>
+        <activity android:windowSoftInputMode="stateUnchanged" android:name="RegisterStudentActivity"></activity>
+        <activity android:name="TutorSpaceActivity"></activity>
+        <activity android:name="StudentFirstSpaceActivity"></activity>
+        <activity android:name="TutorSpaceTwoActivity"></activity>
+        <activity android:name="StudentSecondSpaceActivity"></activity>
+        <activity android:name="ContactUs"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back">
+<TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="Student Registration"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="30dp"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="@android:color/white"
+              android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etStuNameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="name"
+                android:inputType="textPersonName" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etStuEmailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etStuPhoneReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="phone no."
+                android:inputType="phone" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etStuAddressReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="address"
+                android:textColor="#ffffff"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etStuInstitutionReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="school name"
+                android:textColor="#ffffff"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="3"
+                    android:text="Area"
+                    android:textColor="#ffffff"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Spinner
+                    android:id="@+id/spArea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="#ffffff"
+                    android:layout_weight="3"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <RadioGroup
+                    android:id="@+id/rgGenderStu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="horizontal" 
+                    android:weightSum="10"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rbMaleStu"
+                        android:layout_width="wrap_content"
+                        android:checked="true"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:textColor="#ffffff"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemaleStu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:textColor="#ffffff"
+                        android:text="Female" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Standard"
+                    android:textColor="#ffffff"
+                    android:layout_weight="3"
+                    android:layout_marginRight="2dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Spinner
+                    android:id="@+id/spStandard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etStuPasswordReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="password"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etStuRePasswordReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="retype password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnStuSubmitReg"
+                android:layout_marginLeft="30dp"
+        		android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/customsubmit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
